@@ -1,0 +1,8 @@
+name,email,phone,company,source
+" ada lovelace ","ADA@example.COM","1-555-010-0101"," analytical engines inc ","web"
+"Ada Lovelace","ada@example.com","5550100101","Analytical Engines Inc","conference"
+" grace hopper","grace@@example.com","555.010.0102"," navy systems ","web"
+"alan turing","alan@example.org","+1 (555) 010-0103"," computing lab ","referral"
+"","missing-name@example.com","5550100104","Unknown Co","upload"
+"katherine johnson","katherine@example.net","5550100105","orbital math group","web"
+

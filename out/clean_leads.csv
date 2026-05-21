@@ -1,0 +1,6 @@
+name,email,phone,company,source,lead_category,needs_review
+Ada Lovelace,ada@example.com,(555) 010-0101,Analytical Engines Inc,web,Website inbound,
+Grace Hopper,grace@@example.com,(555) 010-0102,Navy Systems,web,Website inbound,invalid_email
+Alan Turing,alan@example.org,(555) 010-0103,Computing Lab,referral,Referral,
+,missing-name@example.com,(555) 010-0104,Unknown Co,upload,Needs source review,missing_required
+Katherine Johnson,katherine@example.net,(555) 010-0105,Orbital Math Group,web,Website inbound,
