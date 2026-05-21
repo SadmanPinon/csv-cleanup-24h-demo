@@ -233,9 +233,37 @@
       .resource-link {
         display: inline-flex;
         margin-top: 18px;
+        margin-right: 18px;
         color: var(--accent);
         font-weight: 700;
         text-decoration: none;
+      }
+
+      .lead-sample {
+        display: grid;
+        grid-template-columns: minmax(0, 0.9fr) minmax(420px, 1.1fr);
+        gap: 22px;
+        align-items: start;
+      }
+
+      .lead-sample .preview-head {
+        background: #eef1f7;
+      }
+
+      .col-business {
+        width: 30%;
+      }
+
+      .col-region {
+        width: 20%;
+      }
+
+      .col-contact {
+        width: 26%;
+      }
+
+      .col-source {
+        width: 24%;
       }
 
       @media (max-width: 840px) {
@@ -244,7 +272,8 @@
         }
 
         .hero,
-        .deliverables {
+        .deliverables,
+        .lead-sample {
           grid-template-columns: 1fr;
         }
 
@@ -286,6 +315,10 @@
 
         .col-review {
           width: 20%;
+        }
+
+        .col-source {
+          display: none;
         }
 
         .flag {
@@ -333,8 +366,8 @@
                   <th class="col-name">Name</th>
                   <th class="col-email">Email</th>
                   <th class="col-phone">Phone</th>
-                  <th class="col-category">Category</th>
-                  <th class="col-review">Review</th>
+                  <th class="col-category">Type</th>
+                  <th class="col-review">QA</th>
                 </tr>
               </thead>
               <tbody>
@@ -350,7 +383,7 @@
                   <td class="col-email">grace@@example.com</td>
                   <td class="col-phone">(555) 010-0102</td>
                   <td class="col-category">Website inbound</td>
-                  <td class="col-review flag">Flagged</td>
+                  <td class="col-review flag">Flag</td>
                 </tr>
                 <tr>
                   <td class="col-name">Alan Turing</td>
@@ -412,6 +445,70 @@
           medical records, or other sensitive private data.
         </p>
         <a class="resource-link" href="./CLIENT_INTAKE.md">Client intake checklist</a>
+      </section>
+
+      <section class="section lead-sample">
+        <div>
+          <div class="eyebrow">Public-source lead pilot</div>
+          <h2>Virginia Healthcare & Wellness Leads</h2>
+          <p class="note">
+            A small sample for a fixed-scope public business lead list: 100
+            Virginia healthcare, med spa, wellness, and recovery-center leads
+            for $99, delivered as a QA-checked CSV with source URLs.
+          </p>
+          <p class="note">
+            Boundary: public business contact information only. No patient data,
+            private medical information, login-only sources, personal contact
+            enrichment, spam automation, or restricted scraping.
+          </p>
+          <a class="resource-link" href="./samples/virginia-healthcare-wellness-public-sample.csv">Download sample CSV</a>
+          <a class="resource-link" href="./LEAD_PILOT.md">Lead pilot scope</a>
+        </div>
+
+        <div class="preview" aria-label="Public business lead sample preview">
+          <div class="preview-head">
+            <span>Sample public leads</span>
+            <span>9 verified rows</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th class="col-business">Business</th>
+                  <th class="col-region">Region</th>
+                  <th class="col-contact">Contact</th>
+                  <th class="col-source">Source</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="col-business">OVME Richmond</td>
+                  <td class="col-region">Richmond</td>
+                  <td class="col-contact">804-999-6863</td>
+                  <td class="col-source">Official location page</td>
+                </tr>
+                <tr>
+                  <td class="col-business">Contour Medical Aesthetics</td>
+                  <td class="col-region">Virginia Beach</td>
+                  <td class="col-contact">757-796-8600</td>
+                  <td class="col-source">Official contact page</td>
+                </tr>
+                <tr>
+                  <td class="col-business">Hampton Roads Health & Wellness</td>
+                  <td class="col-region">Norfolk</td>
+                  <td class="col-contact">757-271-4049</td>
+                  <td class="col-source">Official contact page</td>
+                </tr>
+                <tr>
+                  <td class="col-business">Antidote Aesthetics</td>
+                  <td class="col-region">Virginia Beach</td>
+                  <td class="col-contact">757-995-4732</td>
+                  <td class="col-source">Official website</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </section>
     </main>
   </body>

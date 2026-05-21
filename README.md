@@ -14,6 +14,9 @@ API keys, private credentials, or client data.
 - `out/service-page-desktop.png` - desktop screenshot.
 - `out/service-page-mobile.png` - mobile screenshot.
 - `CLIENT_INTAKE.md` - buyer-facing scope, data boundary, and acceptance checklist.
+- `LEAD_PILOT.md` - scope for the public business lead pilot offer.
+- `samples/virginia-healthcare-wellness-public-sample.csv` - public-source
+  healthcare/wellness lead pilot sample.
 
 ## Verify
 
@@ -26,6 +29,17 @@ Expected output:
 ```text
 Cleaned 6 rows into 5 rows.
 Report written to out/report.md
+```
+
+Lead pilot sample check:
+
+```bash
+python3 - <<'PY'
+import csv
+from pathlib import Path
+rows = list(csv.DictReader(Path("samples/virginia-healthcare-wellness-public-sample.csv").open()))
+print(len(rows), sorted(rows[0]))
+PY
 ```
 
 ## Posting Boundary
