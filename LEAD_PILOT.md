@@ -39,3 +39,9 @@ samples/virginia-healthcare-wellness-public-sample.csv
 
 Every sample row includes an official source URL and was checked for required
 fields.
+
+Sample QA report:
+
+```text
+out/lead-pilot-report.md
+```

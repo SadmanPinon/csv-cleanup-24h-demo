@@ -8,15 +8,17 @@ API keys, private credentials, or client data.
 
 - `index.html` - static service/demo page.
 - `clean_report.py` - runnable cleanup script.
+- `lead_report.py` - runnable QA report script for public lead CSVs.
 - `samples/messy_leads.csv` - synthetic messy CSV input.
+- `samples/virginia-healthcare-wellness-public-sample.csv` - public-source
+  healthcare/wellness lead pilot sample.
 - `out/clean_leads.csv` - cleaned sample output.
 - `out/report.md` - sample quality and category report.
+- `out/lead-pilot-report.md` - sample public lead QA report.
 - `out/service-page-desktop.png` - desktop screenshot.
 - `out/service-page-mobile.png` - mobile screenshot.
 - `CLIENT_INTAKE.md` - buyer-facing scope, data boundary, and acceptance checklist.
 - `LEAD_PILOT.md` - scope for the public business lead pilot offer.
-- `samples/virginia-healthcare-wellness-public-sample.csv` - public-source
-  healthcare/wellness lead pilot sample.
 
 ## Verify
 
@@ -34,12 +36,7 @@ Report written to out/report.md
 Lead pilot sample check:
 
 ```bash
-python3 - <<'PY'
-import csv
-from pathlib import Path
-rows = list(csv.DictReader(Path("samples/virginia-healthcare-wellness-public-sample.csv").open()))
-print(len(rows), sorted(rows[0]))
-PY
+python3 lead_report.py samples/virginia-healthcare-wellness-public-sample.csv out/lead-pilot-report.md
 ```
 
 ## Posting Boundary
