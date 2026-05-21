@@ -13,6 +13,7 @@ API keys, private credentials, or client data.
 - `out/report.md` - sample quality and category report.
 - `out/service-page-desktop.png` - desktop screenshot.
 - `out/service-page-mobile.png` - mobile screenshot.
+- `CLIENT_INTAKE.md` - buyer-facing scope, data boundary, and acceptance checklist.
 
 ## Verify
 
